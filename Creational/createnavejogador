@@ -1,0 +1,4 @@
+CREATE TABLE navejogador(
+    jogador_id serial NOT NULL PRIMARY KEY,
+    nave_id serial NOT NULL 
+);
