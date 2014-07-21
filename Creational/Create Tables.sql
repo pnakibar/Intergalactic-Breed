@@ -12,23 +12,21 @@ CREATE TABLE inimigo(
   recompensa integer NOT NULL
 );
 
+CREATE TABLE funcao(
+  id_funcao serial UNIQUE NOT NULL PRIMARY KEY,
+  funcao_nome character varying(50) NOT NULL
+);
+
 CREATE TABLE tripulante(
   id_tripulante serial NOT NULL PRIMARY KEY,
-  id_funcao serial NOT NULL FOREIGN KEY,
+  id_funcao serial REFERENCES funcao,
   tripulantename character varying(50) NOT NULL,
   idade integer NOT NULL,
   bio character varying(355),
-  vida integer NOT NULL = 100
+  vida integer NOT NULL DEFAULT 100
 );
 
-CREATE TABLE no(
-  id_no serial NOT NULL PRIMARY KEY,
-  coordanada_no int NOT NULL,
-  id_loja serial FOREIGN KEY = NULL,
-  id_evento serial FOREIGN KEY = NULL,
-);  
-
-CREATE TABLE loja_no(
+CREATE TABLE loja(
   id_loja serial NOT NULL PRIMARY KEY,
   mensagem character varying(355),
   produtos character varying(355)
@@ -39,6 +37,25 @@ CREATE TABLE evento(
   mensagem character varying(50)
 );
 
+CREATE TABLE no(
+  id_no serial NOT NULL PRIMARY KEY,
+  coordanada_no int NOT NULL,
+  id_loja serial REFERENCES loja,
+  id_evento serial REFERENCES evento
+);
+
+CREATE TABLE tiposetor(
+  id_tipoSetor serial PRIMARY KEY,
+  nome character varying(50) NOT NULL
+);
+
+CREATE TABLE setor(
+  id_setor serial PRIMARY KEY,
+  id_noInicial serial REFERENCES no,
+  id_noFinal serial REFERENCES no,
+  id_tipoSetor serial REFERENCES tiposetor
+);  
+
 CREATE TABLE tiponave(
 	id_tiponave serial UNIQUE NOT NULL PRIMARY KEY,
 	nome character varying(50) UNIQUE NOT NULL,
@@ -48,44 +65,29 @@ CREATE TABLE tiponave(
 
 CREATE TABLE nave(
   id_nave serial PRIMARY KEY,
-  id_tiponave serial NOT NULL FOREIGN KEY,
+  id_tiponave serial REFERENCES tiponave,
   nomenave VARCHAR (50) NOT NULL
 );
 
-CREATE TABLE funcao(
-  id_funcao serial UNIQUE NOT NULL PRIMARY KEY,
-  funcao_nome character varying(50) NOT NULL
-);
-
 CREATE TABLE navejogador(
-  id_jogador int NOT NULL FOREIGN KEY,
-  id_nave int NOT NULL FOREIGN KEY
+  id_jogador int REFERENCES jogador,
+  id_nave int REFERENCES nave
 );
 
 CREATE TABLE naveinimigo(
-  id_inimigo int NOT NULL FOREIGN KEY,
-  id_nave int NOT NULL FOREIGN KEY
+  id_inimigo int REFERENCES inimigo,
+  id_nave int REFERENCES nave
 );
 
 CREATE TABLE tripulantesdeumanave(
-  id_nave int NOT NULL FOREIGN KEY,
-  tripulante int NOT NULL FOREIGN KEY
+  id_nave int REFERENCES nave,
+  id_tripulante int REFERENCES tripulante
 );
 
 CREATE TABLE nosDeUmSetor(
-  id_setor serial UNIQUE FOREIGN KEY,
-  id_no serial UNIQUE FOREIGN KEY
+  id_setor serial REFERENCES setor,
+  id_no serial REFERENCES no
 );
 
-CREATE TABLE setor(
-  id_setor serial PRIMARY KEY,
-  id_noInicial serial NOT NULL FOREIGN KEY,
-  id_noFinal serial NOT NULL FOREIGN KEY,
-  id_tipoSetor serial NOT NULL FOREIGN KEY
-);
 
-CREATE TABLE tiposetor(
-  id_tipoSetor serial PRIMARY KEY,
-  nome character varying(50) NOT NULL
-);
 
