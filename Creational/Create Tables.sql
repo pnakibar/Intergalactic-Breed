@@ -46,7 +46,7 @@ CREATE TABLE no(
 
 CREATE TABLE tiposetor(
   id_tipoSetor serial PRIMARY KEY,
-  nome character varying(50) NOT NULL
+  nome character varying(50) NOT NULLd
 );
 
 CREATE TABLE setor(
@@ -89,5 +89,9 @@ CREATE TABLE nosdeumsetor(
   id_no serial REFERENCES no
 );
 
+CREATE TABLE naveemno(
+  id_no serial REFERENCES no,
+  id_no serial REFERENCES nave
+);
 
 
