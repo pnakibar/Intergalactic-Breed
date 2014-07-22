@@ -84,9 +84,9 @@ CREATE TABLE tripulantesdeumanave(
   id_tripulante int REFERENCES tripulante
 );
 
-CREATE TABLE nosDeUmSetor(
-  id_setor serial NOT NULL REFERENCES setor,
-  id_no serial NOT NULL REFERENCES no
+CREATE TABLE nosdeumsetor(
+  id_setor serial REFERENCES setor,
+  id_no serial REFERENCES no
 );
 
 
