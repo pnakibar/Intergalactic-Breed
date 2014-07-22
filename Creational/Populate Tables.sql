@@ -9,7 +9,7 @@ INSERT INTO "jogador" (username,realname,password,email) VALUES ('Babyface','Jus
 INSERT INTO "jogador" (username,realname,password,email) VALUES ('Bulldog','Xaviera Spencer','9220','ornare.tortor@convallis.org');
 INSERT INTO "jogador" (username,realname,password,email) VALUES ('The Assassin','Lionel Kennedy','8075','dolor@Proinnislsem.org');
 INSERT INTO "jogador" (username,realname,password,email) VALUES ('The Crippler','Steven Greene','6882','Nullam@sit.ca');
-INSERT INTO "jogador" (username,realname,password,email) VALUES ('The Nightmare','Felix Cervantes','1112','mattis.semper.dui@porttitor.org');
+
 
 /*popular tabela inimigo*/
 INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Dale',422);
@@ -22,7 +22,7 @@ INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Arsenio',80);
 INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Linus',128);
 INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Hayes',284);
 INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Blaze',271);
-INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Christian',104);
+
 
 /*Popular tabela funcao*/
 INSERT INTO "funcao" (funcao_nome) VALUES ('atirador');
@@ -66,7 +66,7 @@ INSERT INTO "evento" (mensagem) VALUES ('egestas rhoncus. Proin');
 INSERT INTO "evento" (mensagem) VALUES ('id ante dictum');
 INSERT INTO "evento" (mensagem) VALUES ('ante dictum mi,');
 INSERT INTO "evento" (mensagem) VALUES ('eu sem. Pellentesque');
-INSERT INTO "evento" (mensagem) VALUES ('velit. Quisque varius.');
+
 
 /*popular no*/
 INSERT INTO "no" (coordanada_no,id_loja,id_evento) VALUES (1,10,4);
@@ -176,26 +176,163 @@ INSERT INTO "tiposetor" (nome) VALUES ('Clean Zone');
 INSERT INTO "tiposetor" (nome) VALUES ('Asteroid Belt');
 
 /*Popular setores*/
-INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,1);
-INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,2);
-INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,3);
-INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,3);
-INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,2);
-INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,1);
-INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,2);
-INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,3);
-INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,1);
-INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,1);
+INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (1,10,1);
+INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (11,20,2);
+INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (21,30,3);
+INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (31,40,3);
+INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (41,50,2);
+INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (51,60,1);
+INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (61,70,2);
+INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (71,80,3);
+INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (81,90,1);
+INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (91,100,3);
 
-/*Popular tipo nave*/
-INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Defiant",106 ,448 );
-INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Victory",154 ,372 );
-INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Valiant",136 ,448 );
-INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Indefatigable",178 ,497 );
-INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Ragnarok",110 ,395 );
-INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Madame De Pompadour131",131 ,330 );
-INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Coup de grace165", 165,535 );
-INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Countess Bathory",149 ,410 );
-INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Mjölnir",124 ,463 );
-INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Faust",149 ,318 );
+/*Popular tiponave*/
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ('model01',106 ,448 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ('model02',154 ,372 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ('model03',136 ,448 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ('model04',178 ,497 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ('model05',110 ,395 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ('model06',131 ,330 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ('model07', 165,535 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ('model08',149 ,410 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ('model09',124 ,463 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ('model10',49 ,318 );
 
+/*Popular naves*/
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (1,'Defiant');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (2,'Victory');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (3,'Valiant');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (4,'Indefatigable');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (5,'Ragnarok');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (6,'Madame De');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (7,'Coup de grace');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (8,'Countess Bathory');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (9,'Mjölnir');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (10,'Faust');
+
+/*popular nave jogador*/
+INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (1,1);
+INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (2,2);
+INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (3,3);
+INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (4,4);
+INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (5,5);
+INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (6,6);
+INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (7,7);
+INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (8,8);
+INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (9,9);
+INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (10,10);
+
+/*popular naveinimigo*/
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (1,1);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (2,2);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (3,3);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (4,4);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (5,5);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (6,6);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (7,7);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (8,8);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (9,9);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (10,10);
+
+/*popular nos de um setor*/
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,1);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,2);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,3);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,4);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,5);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,6);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,7);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,8);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,9);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,10);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (2,11);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (2,12);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (2,13);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (2,14);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (2,15);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (2,16);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (2,17);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (2,18);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (2,19);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (2,20);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (3,21);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (3,22);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (3,23);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (3,24);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (3,25);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (3,26);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (3,27);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (3,28);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (3,29);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (3,30);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (4,31);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (4,32);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (4,33);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (4,34);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (4,35);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (4,36);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (4,37);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (4,38);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (4,39);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (4,40);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (5,41);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (5,42);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (5,43);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (5,44);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (5,45);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (5,46);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (5,47);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (5,48);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (5,49);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (5,50);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (6,51);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (6,52);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (6,53);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (6,54);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (6,55);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (6,56);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (6,57);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (6,58);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (6,59);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (6,60);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (7,61);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (7,62);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (7,63);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (7,64);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (7,65);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (7,66);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (7,67);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (7,68);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (7,69);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (7,70);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (8,71);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (8,72);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (8,73);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (8,74);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (8,75);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (8,76);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (8,77);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (8,78);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (8,79);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (8,80);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (9,81);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (9,82);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (9,83);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (9,84);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (9,85);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (9,86);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (9,87);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (9,88);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (9,89);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (9,90);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,91);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,92);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,93);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,94);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,95);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,96);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,97);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,98);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,99);
+INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,100);
