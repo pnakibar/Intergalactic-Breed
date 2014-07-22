@@ -10,7 +10,6 @@ INSERT INTO "jogador" (username,realname,password,email) VALUES ('Bulldog','Xavi
 INSERT INTO "jogador" (username,realname,password,email) VALUES ('The Assassin','Lionel Kennedy','8075','dolor@Proinnislsem.org');
 INSERT INTO "jogador" (username,realname,password,email) VALUES ('The Crippler','Steven Greene','6882','Nullam@sit.ca');
 
-
 /*popular tabela inimigo*/
 INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Dale',422);
 INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Dolan',362);
@@ -22,7 +21,6 @@ INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Arsenio',80);
 INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Linus',128);
 INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Hayes',284);
 INSERT INTO "inimigo" (nomeinimigo,recompensa) VALUES ('Blaze',271);
-
 
 /*Popular tabela funcao*/
 INSERT INTO "funcao" (funcao_nome) VALUES ('atirador');
@@ -66,7 +64,6 @@ INSERT INTO "evento" (mensagem) VALUES ('egestas rhoncus. Proin');
 INSERT INTO "evento" (mensagem) VALUES ('id ante dictum');
 INSERT INTO "evento" (mensagem) VALUES ('ante dictum mi,');
 INSERT INTO "evento" (mensagem) VALUES ('eu sem. Pellentesque');
-
 
 /*popular no*/
 INSERT INTO "no" (coordanada_no,id_loja,id_evento) VALUES (1,10,4);
@@ -210,7 +207,16 @@ INSERT INTO "nave" (id_tiponave, nomenave) VALUES (7,'Coup de grace');
 INSERT INTO "nave" (id_tiponave, nomenave) VALUES (8,'Countess Bathory');
 INSERT INTO "nave" (id_tiponave, nomenave) VALUES (9,'Mjölnir');
 INSERT INTO "nave" (id_tiponave, nomenave) VALUES (10,'Faust');
-
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (1,'enemyShip01');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (2,'enemyShip02');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (3,'enemyShip03');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (4,'enemyShip04');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (5,'enemyShip05');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (6,'enemyShip06');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (7,'enemyShip07');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (8,'enemyShip08');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (9,'enemyShip09');
+INSERT INTO "nave" (id_tiponave, nomenave) VALUES (10,'enemyShip10');
 /*popular nave jogador*/
 INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (1,1);
 INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (2,2);
@@ -224,16 +230,16 @@ INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (9,9);
 INSERT INTO "navejogador" (id_jogador, id_nave) VALUES (10,10);
 
 /*popular naveinimigo*/
-INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (1,1);
-INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (2,2);
-INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (3,3);
-INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (4,4);
-INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (5,5);
-INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (6,6);
-INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (7,7);
-INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (8,8);
-INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (9,9);
-INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (10,10);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (1,11);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (2,12);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (3,13);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (4,14);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (5,15);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (6,16);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (7,17);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (8,18);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (9,19);
+INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (10,20);
 
 /*popular nos de um setor*/
 INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,1);

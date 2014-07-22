@@ -91,7 +91,7 @@ CREATE TABLE nosdeumsetor(
 
 CREATE TABLE naveemno(
   id_no serial REFERENCES no,
-  id_no serial REFERENCES nave
+  id_nave serial REFERENCES nave
 );
 
 
