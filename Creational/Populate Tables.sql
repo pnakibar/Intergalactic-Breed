@@ -241,6 +241,9 @@ INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (8,18);
 INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (9,19);
 INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (10,20);
 
+/*inserir nave em um nó*/
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (1,1);
+
 /*popular nos de um setor*/
 INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,1);
 INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,2);
@@ -342,3 +345,25 @@ INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,97);
 INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,98);
 INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,99);
 INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (10,100);
+
+/*inserir nave em um no*/
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (56,1);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (24,2);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (16,3);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (98,4);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (43,5);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (66,6);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (35,7);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (65,8);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (100,9);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (21,10);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (21,11);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (33,12);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (75,13);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (44,14);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (90,15);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (27,16);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (52,17);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (44,18);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (68,19);
+INSERT INTO "naveemno" (id_no, id_nave) VALUES (15,20);
