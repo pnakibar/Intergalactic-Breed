@@ -188,3 +188,14 @@ INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,1);
 INSERT INTO "setor" (id_noInicial, id_noFinal, id_tipoSetor) VALUES (149,158,1);
 
 /*Popular tipo nave*/
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Defiant",106 ,448 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Victory",154 ,372 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Valiant",136 ,448 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Indefatigable",178 ,497 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Ragnarok",110 ,395 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Madame De Pompadour131",131 ,330 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Coup de grace165", 165,535 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Countess Bathory",149 ,410 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Mjölnir",124 ,463 );
+INSERT INTO "tiponave" (nome, ataque, armadura) VALUES ("Faust",149 ,318 );
+
