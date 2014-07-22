@@ -19,7 +19,7 @@ CREATE TABLE funcao(
 
 CREATE TABLE tripulante(
   id_tripulante serial NOT NULL PRIMARY KEY,
-  id_funcao serial REFERENCES funcao,
+  id_funcao serial NOT NULL REFERENCES funcao,
   tripulantename character varying(50) NOT NULL,
   idade integer NOT NULL,
   bio character varying(355),
@@ -51,9 +51,9 @@ CREATE TABLE tiposetor(
 
 CREATE TABLE setor(
   id_setor serial PRIMARY KEY,
-  id_noInicial serial REFERENCES no,
-  id_noFinal serial REFERENCES no,
-  id_tipoSetor serial REFERENCES tiposetor
+  id_noInicial serial NOT NULL REFERENCES no,
+  id_noFinal serial NOT NULL REFERENCES no,
+  id_tipoSetor serial NOT NULL REFERENCES tiposetor
 );  
 
 CREATE TABLE tiponave(
@@ -65,7 +65,7 @@ CREATE TABLE tiponave(
 
 CREATE TABLE nave(
   id_nave serial PRIMARY KEY,
-  id_tiponave serial REFERENCES tiponave,
+  id_tiponave serial NOT NULL REFERENCES tiponave,
   nomenave VARCHAR (50) NOT NULL
 );
 
@@ -85,8 +85,8 @@ CREATE TABLE tripulantesdeumanave(
 );
 
 CREATE TABLE nosDeUmSetor(
-  id_setor serial REFERENCES setor,
-  id_no serial REFERENCES no
+  id_setor serial NOT NULL REFERENCES setor,
+  id_no serial NOT NULL REFERENCES no
 );
 
 
