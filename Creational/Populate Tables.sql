@@ -241,9 +241,6 @@ INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (8,18);
 INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (9,19);
 INSERT INTO "naveinimigo" (id_inimigo, id_nave) VALUES (10,20);
 
-/*inserir nave em um nó*/
-INSERT INTO "naveemno" (id_no, id_nave) VALUES (1,1);
-
 /*popular nos de um setor*/
 INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,1);
 INSERT INTO "nosdeumsetor" (id_setor, id_no) VALUES (1,2);
@@ -367,3 +364,25 @@ INSERT INTO "naveemno" (id_no, id_nave) VALUES (52,17);
 INSERT INTO "naveemno" (id_no, id_nave) VALUES (44,18);
 INSERT INTO "naveemno" (id_no, id_nave) VALUES (68,19);
 INSERT INTO "naveemno" (id_no, id_nave) VALUES (15,20);
+
+/*popular tripulantesDeUmaNave*/
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (1,1);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (2,2);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (3,3);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (4,4);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (5,5);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (6,1);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (7,2);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (8,3);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (9,4);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (10,5);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (11,1);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (12,2);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (13,3);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (14,4);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (15,5);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (16,1);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (17,2);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (18,3);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (19,4);
+INSERT INTO "tripulantesdeumanave" (id_nave, id_tripulante) VALUES (20,5);
