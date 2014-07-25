@@ -1,8 +1,13 @@
-CREATE OR REPLACE view81 AS
+CREATE OR REPLACE VIEW view81 AS
 -- Consulta 8.1 --
--- Mostra as relacação jogador nave  --
-
-SELECT j.username, n.nomenave 
-FROM jogador j JOIN 
-     navejogador jn ON (jn.id_jogador= j.id_jogador) JOIN
-     nave n ON (jn.id_nave = n.id_nave)
+-- Dentre os tripulantes, mostra os que têm menor quantidade de vida por função.  --
+--/*
+SELECT 
+	min(t.vida),
+	f.funcao_nome
+FROM
+	tripulante t
+	INNER JOIN funcao f ON f.id_funcao = t.id_funcao
+	GROUP BY f.funcao_nome
+--*/
+------------------------------------------------------------------------------------

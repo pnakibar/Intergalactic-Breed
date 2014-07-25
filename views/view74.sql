@@ -1,4 +1,4 @@
-CREATE OR REPLACE view74 AS
+CREATE OR REPLACE VIEW view74 AS
 -- Consulta 7.4 --
 -- Retorna os nós que são iniciais' --
 

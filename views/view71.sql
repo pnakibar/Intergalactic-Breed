@@ -1,5 +1,5 @@
-CREATE OR REPLACE view71 AS
-﻿-- Consulta 7.1 --
+CREATE OR REPLACE VIEW view71 AS
+-- Consulta 7.1 --
 -- Nome do jogador, qual a nave e o seu modelo e se seu ataque está acima da média --
 SELECT
 	j.username,

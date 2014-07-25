@@ -1,5 +1,5 @@
-CREATE OR REPLACE view55 AS
-﻿-- Consulta 5 --
+CREATE OR REPLACE VIEW view55 AS
+-- Consulta 5 --
 
 -- Retorna em quais nós os inimigos estão presentes.
 --/*

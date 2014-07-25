@@ -1,4 +1,4 @@
-CREATE OR REPLACE view72 AS
+CREATE OR REPLACE VIEW view72 AS
 -- Consulta 7.2 --
 -- Subquery retorna entre os nós 10 e 24, quais deles possuem naves, e a query principal traz qual é a nave no nó. --
 
