@@ -1,8 +1,6 @@
 ﻿-- Consulta 4 --
-<<<<<<< HEAD
 -- Retorna quais nós não possuem naves.
-=======
->>>>>>> origin/pedro
+
 --/*
 SELECT
 	ns.id_no

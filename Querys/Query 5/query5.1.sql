@@ -1,8 +1,6 @@
 ﻿-- Consulta 1 --
-<<<<<<< HEAD
 -- Retorna o nickname do jogador e o nome da nave que ele possui.
-=======
->>>>>>> origin/pedro
+
 --/*
 SELECT 
 	jogador.username, nave.nomenave 
