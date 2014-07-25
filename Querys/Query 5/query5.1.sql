@@ -1,4 +1,5 @@
 ﻿-- Consulta 1 --
+-- Retorna o nickname do jogador e o nome da nave que ele possui.
 --/*
 SELECT 
 	jogador.username, nave.nomenave 

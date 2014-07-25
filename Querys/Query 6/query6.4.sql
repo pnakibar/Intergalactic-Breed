@@ -1,4 +1,5 @@
 ﻿-- Consulta 4 --
+-- Retorna quais nós não possuem naves.
 --/*
 SELECT
 	ns.id_no

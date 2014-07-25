@@ -1,4 +1,5 @@
 ﻿-- Consulta 5 --
+-- Retorna em quais nós os inimigos estão presentes.
 --/*
 SELECT
 	nn.id_no,

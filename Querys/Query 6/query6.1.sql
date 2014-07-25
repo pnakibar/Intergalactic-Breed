@@ -1,4 +1,5 @@
 ﻿-- Consulta 1 --
+-- Retorna a união das mensagens presentes em lojas e em eventos.
 --/*
 SELECT
 	e.mensagem

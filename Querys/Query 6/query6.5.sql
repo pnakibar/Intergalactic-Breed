@@ -1,4 +1,5 @@
 ﻿-- Consulta 5 --
+-- Retorna o nome e a idade de todos os tripulantes com mais de 35 anos.
 --/*
 SELECT
 	idade,

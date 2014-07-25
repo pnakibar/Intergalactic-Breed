@@ -1,4 +1,5 @@
 ﻿-- Consulta 4 --
+-- Retorna o nome de cada nave de jogador com suas respectivas quantidades de ataque e armadura.
 --/*
 SELECT
 	n.nomenave,

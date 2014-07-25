@@ -1,10 +1,11 @@
 ﻿-- Consulta 2 --
+-- Retorna o nome e a vida dos tripulantes e o modelo e a armadura das naves.
 --/*
 SELECT
 	t.vida,
 	t.tripulantename
 FROM
-	tripulante
+	tripulante t
 UNION
 	SELECT
 		tn.armadura,
