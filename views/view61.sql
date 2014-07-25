@@ -1,4 +1,4 @@
-create or replace view61 as
+CREATE OR REPLACE view61 AS
 ﻿-- Consulta 1 --
 -- Retorna a união das mensagens presentes em lojas e em eventos.
 

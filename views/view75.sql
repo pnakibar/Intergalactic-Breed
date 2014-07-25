@@ -1,4 +1,4 @@
-create or replace view75 as
+CREATE OR REPLACE view75 AS
 -- Consulta 7.5 --
 -- Nós que contem inimigos --
 

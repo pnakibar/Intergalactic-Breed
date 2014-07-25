@@ -1,4 +1,4 @@
-create or replace view84 as
+CREATE OR REPLACE view84 AS
 -- Query 8.4 --
 -- Mostra os tipos dos setores --
  SELECT s.id_setor AS "setor",

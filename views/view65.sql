@@ -1,4 +1,4 @@
-create or replace view65 as
+CREATE OR REPLACE view65 AS
 ﻿-- Consulta 5 --
 -- Retorna o nome e a idade de todos os tripulantes com mais de 35 anos.
 

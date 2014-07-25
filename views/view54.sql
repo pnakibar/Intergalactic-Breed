@@ -1,4 +1,4 @@
-create or replace view54 as
+CREATE OR REPLACE view54 AS
 ﻿-- Consulta 4 --
 
 -- Retorna o nome de cada nave de jogador com suas respectivas quantidades de ataque e armadura.

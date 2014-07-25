@@ -1,4 +1,4 @@
-create or replace view53 as
+CREATE OR REPLACE view53 AS
 ﻿-- Consulta 3 --
 -- Retorna o nome de cada inimigo e quanto ele dará de recompensa.
 

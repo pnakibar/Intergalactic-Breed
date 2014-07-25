@@ -1,4 +1,4 @@
-create or replace view51 as
+CREATE OR REPLACE view51 AS
 ﻿-- Consulta 1 --
 -- Retorna o nickname do jogador e o nome da nave que ele possui.
 

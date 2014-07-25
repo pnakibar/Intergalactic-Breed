@@ -1,4 +1,4 @@
-create or replace view64 as
+CREATE OR REPLACE view64 AS
 ﻿-- Consulta 4 --
 -- Retorna quais nós não possuem naves.
 

@@ -1,4 +1,4 @@
-create or replace view52 as
+CREATE OR REPLACE view52 AS
 ﻿-- Consulta 2 --
 
 -- Retorna o nome das naves; o nome de seus tripulantes e suas respectivas funções.
