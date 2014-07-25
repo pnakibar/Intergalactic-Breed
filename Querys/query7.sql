@@ -1,5 +1,5 @@
 ﻿-- Consulta 1 --
-/*
+
 SELECT
 	j.username,
 	n.nomenave,
@@ -18,11 +18,11 @@ WHERE
 			tiponave tn
 	)
 	ORDER BY tn.ataque DESC
-*/
+
 ------------------------------------------------------------------
 
 -- Consulta 2 --
-/*
+
 SELECT
 	n.nomenave,
 	no.id_no
@@ -40,7 +40,7 @@ WHERE
 			nn.id_no BETWEEN 10 AND 24
 	)
 	ORDER BY no.id_no
-*/
+
 ------------------------------------------------------------------
 
 -- Consulta 3 --
