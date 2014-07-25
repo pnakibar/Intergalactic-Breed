@@ -1,5 +1,5 @@
 -- Consulta 7.4 --
--- Retorna os próximos nós que são iniciais' --
+-- Retorna os nós que são iniciais' --
 
 SELECT
 	n.id_no AS "Nós que são iniciais"
