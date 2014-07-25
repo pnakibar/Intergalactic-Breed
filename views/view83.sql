@@ -1,4 +1,4 @@
-create or replace view83 as
+CREATE OR REPLACE view83 AS
 -- Query 8.3 --
 -- Mostra o nó com as mensagens e ids dos eventos e lojas atrelados a eles --
 SELECT 	n.id_no,

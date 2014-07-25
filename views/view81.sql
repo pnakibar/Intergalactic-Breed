@@ -1,4 +1,4 @@
-create or replace view81 as
+CREATE OR REPLACE view81 AS
 -- Consulta 8.1 --
 -- Mostra as relacação jogador nave  --
 

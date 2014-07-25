@@ -1,4 +1,4 @@
-create or replace view82 as
+CREATE OR REPLACE view82 AS
 -- Consulta 8.2 --
 -- Mostra as especificações de todas as naves no jogo  --
 

@@ -1,4 +1,4 @@
-create or replace view63 as
+CREATE OR REPLACE view63 AS
 ﻿-- Consulta 3 --
 -- Retorna a interseção entre os valores de ataque de uma nave e os valores de recompensa de um inimigo.
 

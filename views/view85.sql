@@ -1,4 +1,4 @@
-create or replace view85 as
+CREATE OR REPLACE view85 AS
 -- Query 8.5 --
 -- mostra os tripulantes e a sua funcao de uma nave --
 SELECT 	n.nomenave AS "nome_nave",

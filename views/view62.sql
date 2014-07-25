@@ -1,4 +1,4 @@
-create or replace view62 as
+CREATE OR REPLACE view62 AS
 ﻿-- Consulta 2 --
 -- Retorna o nome e a vida dos tripulantes e o modelo e a armadura das naves.
 
