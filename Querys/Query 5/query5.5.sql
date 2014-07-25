@@ -1,5 +1,8 @@
 ﻿-- Consulta 5 --
+<<<<<<< HEAD
 -- Retorna em quais nós os inimigos estão presentes.
+=======
+>>>>>>> origin/pedro
 --/*
 SELECT
 	nn.id_no,

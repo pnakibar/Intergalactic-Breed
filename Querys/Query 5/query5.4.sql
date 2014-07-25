@@ -1,5 +1,8 @@
 ﻿-- Consulta 4 --
+<<<<<<< HEAD
 -- Retorna o nome de cada nave de jogador com suas respectivas quantidades de ataque e armadura.
+=======
+>>>>>>> origin/pedro
 --/*
 SELECT
 	n.nomenave,

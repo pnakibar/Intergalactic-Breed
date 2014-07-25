@@ -1,5 +1,8 @@
 ﻿-- Consulta 1 --
+<<<<<<< HEAD
 -- Retorna a união das mensagens presentes em lojas e em eventos.
+=======
+>>>>>>> origin/pedro
 --/*
 SELECT
 	e.mensagem
