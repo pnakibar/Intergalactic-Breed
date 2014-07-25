@@ -1,7 +1,7 @@
 -- Consulta 8.2 --
 -- Mostra as especificações de todas as naves no jogo  --
 
-SELECT *
+SELECT n.id_nave, n.id_tiponave, n.nomenave, tn.nome, tn.ataque, tn.armadura
 FROM 	nave n
-		INNER JOIN tiponave tn ON n.id_tiponave = tn.id_tiponave
+		INNER JOIN tiponave tn ON tn.id_tiponave = n.id_tiponave
 	 

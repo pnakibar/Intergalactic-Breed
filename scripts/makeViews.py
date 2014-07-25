@@ -8,7 +8,7 @@ viewsDir = rootProjDir+"\\views\\" #views directory
 def createHeader(fileName):
     return 'CREATE OR REPLACE VIEW view'+fileName+' AS(\n'
 
-
+'''
 def writeNewFile(fileName,text):
     global viewsDir
     fileName = fileName.replace('.', '')
@@ -23,8 +23,19 @@ def writeNewFile(fileName,text):
         newfile.write(text[3:])
 
     newfile.close()
-
-
+'''
+def writeNewFile(fileName,text):
+    global viewsDir
+    fileName = fileName.replace('.', '')
+    newfile = open(viewsDir+"views.sql", 'a+')
+    newfile.write(createHeader(fileName))
+       
+    if (text[0] == '-'):
+        newfile.write(text)
+    else:
+        newfile.write(text[3:])
+    newfile.write("\n\n);\n\n")
+    newfile.close()
 
 #set target 'dir' to the desired directory
 targetDir = rootProjDir+"Querys\\"
