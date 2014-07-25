@@ -6,7 +6,8 @@ rootProjDir = curDir[:len(curDir)-7] #root project directory
 viewsDir = rootProjDir+"\\views\\" #views directory
 
 def createHeader(fileName):
-    return 'CREATE OR REPLACE VIEW view'+fileName+' AS\n'
+    return 'CREATE OR REPLACE VIEW view'+fileName+' AS(\n'
+
 
 def writeNewFile(fileName,text):
     global viewsDir
@@ -22,7 +23,6 @@ def writeNewFile(fileName,text):
         newfile.write(text[3:])
 
     newfile.close()
-    
 
 
 
