@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW view51 AS(
+﻿CREATE OR REPLACE VIEW view51 AS(
 /*Consulta 1
 Retorna o nickname do jogador e o nome da nave que ele possui.*/
 
@@ -122,6 +122,7 @@ FROM 	navejogador n
 
 		
 --*/
+---------------------------------------------------
 
 );
 
@@ -299,19 +300,19 @@ FROM
 );
 
 CREATE OR REPLACE VIEW view82 AS(
--- Consulta 8.2 --
--- Mostra quanto de recompensa cada nave inimiga pode dar no jogo.  --
---/*
-SELECT  
- sum(i.recompensa),
- i.nomeinimigo,
- n.nomenave
+
+
+SELECT 	
+	sum(i.recompensa),
+	i.nomeinimigo,
+	n.nomenave
 FROM
- nave n
- INNER JOIN naveinimigo ni ON ni.id_nave = n.id_nave
- INNER JOIN inimigo i ON i.id_inimigo = ni.id_inimigo
- GROUP BY i.nomeinimigo, n.nomenave
---*/
+	nave n
+	INNER JOIN naveinimigo ni ON ni.id_nave = n.id_nave
+	INNER JOIN inimigo i ON i.id_inimigo = ni.id_inimigo
+	GROUP BY i.nomeinimigo, n.nomenave
+
+
 
 );
 
@@ -332,6 +333,11 @@ CREATE OR REPLACE VIEW view84 AS(
 -- Mostra a quantidade de jogadores--
  SELECT COUNT(j.id_jogador)
  FROM 	jogador j
+
+ 		
+
+	 
+
 );
 
 CREATE OR REPLACE VIEW view85 AS(

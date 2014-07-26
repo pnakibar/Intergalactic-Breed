@@ -6,30 +6,8 @@ rootProjDir = curDir[:len(curDir)-7] #root project directory
 viewsDir = rootProjDir+"\\views\\" #views directory
 
 def createHeader(fileName):
-<<<<<<< HEAD
     return 'CREATE OR REPLACE VIEW view'+fileName+' AS(\n'
 
-'''
-=======
-    return "CREATE OR REPLACE view"+fileName+" AS"
-
->>>>>>> origin/HUE
-def writeNewFile(fileName,text):
-    global viewsDir
-    fileName = fileName.replace('.', '')
-    newfile = open(viewsDir+"view"+fileName+".sql", 'w')
-<<<<<<< HEAD
-    newfile.write(createHeader(fileName))
-    #if (text[0] == '-' or '/' or '*') newfile.write(text)
-    #else newfile.write(text[3:])
-    
-    if (text[0] == '-'):
-        newfile.write(text)
-    else:
-        newfile.write(text[3:])
-
-    newfile.close()
-'''
 def writeNewFile(fileName,text):
     global viewsDir
     fileName = fileName.replace('.', '')
