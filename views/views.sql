@@ -297,67 +297,63 @@ CREATE OR REPLACE VIEW view81 AS(
 -- Dentre os tripulantes, mostra os que têm menor quantidade de vida por função.  --
 --/*
 SELECT 
-	min(t.vida),
-	f.funcao_nome
+ min(t.vida),
+ f.funcao_nome
 FROM
-	tripulante t
-	INNER JOIN funcao f ON f.id_funcao = t.id_funcao
-	GROUP BY f.funcao_nome
+ tripulante t
+ INNER JOIN funcao f ON f.id_funcao = t.id_funcao
+ GROUP BY f.funcao_nome
 --*/
-------------------------------------------------------------------------------------
 
 );
 
 CREATE OR REPLACE VIEW view82 AS(
 -- Consulta 8.2 --
--- Mostra as especificações de todas as naves no jogo  --
-
-SELECT n.id_nave, n.id_tiponave, n.nomenave, tn.nome, tn.ataque, tn.armadura
-FROM 	nave n
-		INNER JOIN tiponave tn ON tn.id_tiponave = n.id_tiponave
-	 
+-- Mostra quanto de recompensa cada nave inimiga pode dar no jogo.  --
+--/*
+SELECT  
+ sum(i.recompensa),
+ i.nomeinimigo,
+ n.nomenave
+FROM
+ nave n
+ INNER JOIN naveinimigo ni ON ni.id_nave = n.id_nave
+ INNER JOIN inimigo i ON i.id_inimigo = ni.id_inimigo
+ GROUP BY i.nomeinimigo, n.nomenave
+--*/
 
 );
 
 CREATE OR REPLACE VIEW view83 AS(
--- Query 8.3 --
--- Mostra o nó com as mensagens e ids dos eventos e lojas atrelados a eles --
-SELECT 	n.id_no,
-		e.id_evento,
-		e.mensagem AS "Mensagem evento",
-		l.id_loja,
-		l.mensagem AS "Mensagem loja"
-	
-FROM 	no n
-		INNER JOIN loja l ON l.id_loja = n.id_loja
-		INNER JOIN evento e ON e.id_evento = n.id_evento
-	 
+-- query 8.3 --
+-- conta quantos nós são finais ou iniciais --
+
+SELECT count(ns.id_no) AS "qtdNosfinaisOuIniciais"
+FROM	nosdeumsetor ns
+ 		INNER JOIN setor s ON s.id_setor = ns.id_setor
+
+WHERE ns.id_no = s.id_noFinal OR ns.id_no = s.id_noInicial
 
 );
 
 CREATE OR REPLACE VIEW view84 AS(
 -- Query 8.4 --
--- Mostra os tipos dos setores --
- SELECT s.id_setor AS "setor",
- 		ts.nome AS "tipo"
- FROM 	setor s
- 		INNER JOIN tiposetor ts ON s.id_tiposetor = ts.id_tiposetos
+-- Mostra a quantidade de jogadores--
+ SELECT COUNT(j.id_jogador)
+ FROM 	jogador j
+ GROUP BY j.id_jogador
+ 		
+
 	 
 
 );
 
 CREATE OR REPLACE VIEW view85 AS(
 -- Query 8.5 --
--- mostra os tripulantes e a sua funcao de uma nave --
-SELECT 	n.nomenave AS "nome_nave",
-		t.id_tripulante AS "id_tripulante",
-		t.tripulantename AS "nome_tripulante",
-		f.funcao_nome AS "funcao_tripulante"
+-- Quantidade total de recompensa que você pode adquirir --
+SELECT 	sum(i.recompensa) AS "qtdTotalRecompensa"
+FROM 	inimigo i
 
-FROM 	tripulante t
-		INNER JOIN funcao f ON t.id_funcao = f.id_funcao
-		INNER JOIN tripulantesdeumanave tdv ON t.id_tripulante = tdv.id_tripulante
-		INNER JOIN nave n ON tdv.id_nave = n.id_nave
 
 
 
