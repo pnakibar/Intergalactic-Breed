@@ -111,24 +111,17 @@ UNION
 
 CREATE OR REPLACE VIEW view62 AS(
 -- Consulta 2 --
--- Retorna o nome e a vida dos tripulantes e o modelo e a armadura das naves.
+-- Retorna o id e o dono da nave.
 
 --/*
-SELECT
-	t.vida,
-	t.tripulantename
-FROM
-	tripulante t
-UNION
-	SELECT
-		tn.armadura,
-		tn.nome
-	FROM
-		tiponave tn
-		ORDER BY vida DESC, tripulantename
+SELECT 	n.id_nave,
+		n.id_jogador AS "id_dono"
+FROM 	navejogador n
+		UNION 	SELECT i.id_nave, i.id_inimigo
+		FROM naveinimigo i
+
 		
 --*/
----------------------------------------------------
 
 );
 
@@ -341,11 +334,6 @@ CREATE OR REPLACE VIEW view84 AS(
 -- Mostra a quantidade de jogadores--
  SELECT COUNT(j.id_jogador)
  FROM 	jogador j
- GROUP BY j.id_jogador
- 		
-
-	 
-
 );
 
 CREATE OR REPLACE VIEW view85 AS(
