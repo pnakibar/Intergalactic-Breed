@@ -3,5 +3,5 @@
  SELECT s.id_setor AS "setor",
  		ts.nome AS "tipo"
  FROM 	setor s
- 		INNER JOIN tiposetor ts ON s.id_tiposetor = ts.id_tiposeto
+ 		INNER JOIN tiposetor ts ON s.id_tiposetor = ts.id_tiposetos
 	 

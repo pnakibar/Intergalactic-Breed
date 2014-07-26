@@ -10,6 +10,7 @@ FROM
 	navejogador ON (jogador.id_jogador = navejogador.id_jogador) JOIN
 	nave ON (navejogador.id_nave = nave.id_nave)
 
+
 );
 
 CREATE OR REPLACE VIEW view52 AS(
@@ -31,6 +32,7 @@ FROM
 
 
 -------------------------------------------------------------------------
+
 );
 
 CREATE OR REPLACE VIEW view53 AS(
@@ -45,6 +47,7 @@ FROM
 	ORDER BY recompensa DESC
 
 -------------------------------------------------------------------------
+
 );
 
 CREATE OR REPLACE VIEW view54 AS(
@@ -65,6 +68,7 @@ FROM
 	ORDER BY armadura DESC, ataque DESC
 --*/
 -------------------------------------------------------------------------
+
 );
 
 CREATE OR REPLACE VIEW view55 AS(
@@ -83,6 +87,7 @@ FROM
 	ORDER BY i.nomeinimigo
 --*/
 ------------------------------------------------------------
+
 );
 
 CREATE OR REPLACE VIEW view61 AS(
@@ -101,6 +106,7 @@ UNION
 		loja l
 --*/
 ---------------------------------------------------
+
 );
 
 CREATE OR REPLACE VIEW view62 AS(
@@ -123,6 +129,7 @@ UNION
 		
 --*/
 ---------------------------------------------------
+
 );
 
 CREATE OR REPLACE VIEW view63 AS(
@@ -141,6 +148,7 @@ INTERSECT
 		inimigo i
 --*/
 ---------------------------------------------------
+
 );
 
 CREATE OR REPLACE VIEW view64 AS(
@@ -160,6 +168,7 @@ EXCEPT
 		ORDER BY id_no
 --*/
 ---------------------------------------------------
+
 );
 
 CREATE OR REPLACE VIEW view65 AS(
@@ -183,6 +192,7 @@ EXCEPT
 		ORDER BY idade
 --*/
 ---------------------------------------------------
+
 );
 
 CREATE OR REPLACE VIEW view71 AS(
@@ -208,6 +218,7 @@ WHERE
 	ORDER BY tn.ataque DESC
 
 
+
 );
 
 CREATE OR REPLACE VIEW view72 AS(
@@ -231,6 +242,7 @@ WHERE
 			nn.id_no BETWEEN 10 AND 24
 	)
 	ORDER BY no.id_no
+
 );
 
 CREATE OR REPLACE VIEW view73 AS(
@@ -247,6 +259,7 @@ WHERE n.id_tiponave=(SELECT tn.id_tiponave
 					WHERE tn.nome LIKE 'model01')
 		
 
+
 );
 
 CREATE OR REPLACE VIEW view74 AS(
@@ -261,6 +274,7 @@ FROM
 WHERE n.id_no=	(SELECT s.id_noinicial 
 			   	FROM setor s
 			   	WHERE n.id_no = s.id_noinicial)
+
 );
 
 CREATE OR REPLACE VIEW view75 AS(
@@ -275,6 +289,7 @@ FROM
 WHERE nn.id_nave=(SELECT ni.id_nave 
 			   	FROM naveinimigo ni
 			   	WHERE ni.id_nave = nn.id_nave)
+
 );
 
 CREATE OR REPLACE VIEW view81 AS(
@@ -290,16 +305,18 @@ FROM
 	GROUP BY f.funcao_nome
 --*/
 ------------------------------------------------------------------------------------
+
 );
 
 CREATE OR REPLACE VIEW view82 AS(
 -- Consulta 8.2 --
 -- Mostra as especificações de todas as naves no jogo  --
 
-SELECT *
+SELECT n.id_nave, n.id_tiponave, n.nomenave, tn.nome, tn.ataque, tn.armadura
 FROM 	nave n
-		INNER JOIN tiponave tn ON n.id_tiponave = tn.id_tiponave
+		INNER JOIN tiponave tn ON tn.id_tiponave = n.id_tiponave
 	 
+
 );
 
 CREATE OR REPLACE VIEW view83 AS(
@@ -315,6 +332,7 @@ FROM 	no n
 		INNER JOIN loja l ON l.id_loja = n.id_loja
 		INNER JOIN evento e ON e.id_evento = n.id_evento
 	 
+
 );
 
 CREATE OR REPLACE VIEW view84 AS(
@@ -323,8 +341,9 @@ CREATE OR REPLACE VIEW view84 AS(
  SELECT s.id_setor AS "setor",
  		ts.nome AS "tipo"
  FROM 	setor s
- 		INNER JOIN tiposetor ts ON s.id_tiposetor = ts.id_tiposeto
+ 		INNER JOIN tiposetor ts ON s.id_tiposetor = ts.id_tiposetos
 	 
+
 );
 
 CREATE OR REPLACE VIEW view85 AS(
@@ -339,6 +358,7 @@ FROM 	tripulante t
 		INNER JOIN funcao f ON t.id_funcao = f.id_funcao
 		INNER JOIN tripulantesdeumanave tdv ON t.id_tripulante = tdv.id_tripulante
 		INNER JOIN nave n ON tdv.id_nave = n.id_nave
+
 
 
 
