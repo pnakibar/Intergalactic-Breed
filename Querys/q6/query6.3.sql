@@ -1,15 +1,13 @@
-﻿-- Consulta 3 --
--- Retorna a interseção entre os valores de ataque de uma nave e os valores de recompensa de um inimigo.
-
---/*
+﻿-- Consulta 6.3 --
+-- Retorna o nome de todos os tripulantes, exceto aqueles com menos de 40 anos. --
 SELECT
-	tn.ataque
-FROM
-	tiponave tn
-INTERSECT
-	SELECT
-		i.recompensa
-	FROM
-		inimigo i
---*/
----------------------------------------------------
+ t.tripulantename
+FROM  
+ tripulante t
+EXCEPT
+ SELECT
+  t.tripulantename
+ FROM
+  tripulante t
+ WHERE
+  t.idade < 40
